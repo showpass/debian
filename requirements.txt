@@ -1,12 +1,12 @@
 daphne==2.3.0
 cython==0.29.14
-gunicorn==20.0.4
+gunicorn==20.1.0
 Twisted[tls,http2]==19.2.1
-lxml==4.2.1
-cryptography==2.8
+lxml==4.6.3
+cryptography==3.2
 asgiref==3.2.0
 cffi==1.14.0
-autobahn==17.9.1
+autobahn==20.12.3
 h2==3.0.1
 hpack==3.0.0
 hyperframe==5.1.0
