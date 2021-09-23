@@ -10,7 +10,7 @@ RUN apt-get -y install libcairo2 libpango* pango*
 
 ADD requirements.txt .
 RUN pip install --upgrade pip
-RUN pip install -r requirements.txt --use-deprecated=legacy-resolver # Install dependencies that take a long time
+RUN pip install -r requirements.txt # Install dependencies that take a long time
 RUN rm requirements.txt
 
 RUN apt-get -y install wget
