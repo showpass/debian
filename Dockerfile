@@ -7,6 +7,7 @@ RUN apt-get -y install postgresql-client
 RUN apt-get -y install python3-dev python3-pil python3-gevent
 RUN apt-get -y install libxslt1-dev libxml2-dev libffi-dev
 RUN apt-get -y install libcairo2 libpango* pango*
+RUN apt-get -y install wkhtmltopdf
 
 ADD requirements.txt .
 RUN pip install --upgrade pip
