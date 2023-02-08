@@ -3,7 +3,7 @@ cython==0.29.14
 gunicorn==20.1.0
 Twisted[tls,http2]==21.7.0
 lxml==4.6.3
-cryptography==37.0.2
+cryptography==39.0.1
 asgiref==3.3.4
 cffi==1.15.0
 autobahn==20.12.3
