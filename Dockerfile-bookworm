@@ -15,7 +15,10 @@ RUN apt-get -y install libcairo2-dev
 RUN apt-get -y install wget
 
 RUN pip install --upgrade pip
-RUN pip install uv
+RUN pip install --no-cache-dir uv==0.13.1
+
+# Allow transient package-index and download failures to recover during builds.
+ENV UV_HTTP_RETRIES=5
 
 
 # wkhtmltopdf 0.12.6 (with patched qt)
